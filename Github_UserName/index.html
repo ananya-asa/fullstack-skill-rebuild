@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Search w/ Debounce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>GitHub User Search 🔍</h1>
+        
+        <input type="text" id="search-input" placeholder="Type a GitHub username..." autocomplete="off">
+        
+        <div id="profile-card" class="card" style="display: none;">
+            <img id="avatar" src="" alt="Avatar">
+            <h2 id="name">Name</h2>
+            <p id="bio">Bio goes here</p>
+            <div class="stats">
+                <span>📂 Repos: <strong id="repos">0</strong></span>
+                <span>👥 Followers: <strong id="followers">0</strong></span>
+            </div>
+        </div>
+
+        <p id="error-message" style="display: none; color: red;">User not found 😢</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
